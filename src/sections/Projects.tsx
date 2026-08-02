@@ -18,8 +18,8 @@ const projects = [
       "REST API",
       "Responsive Design",
     ],
-    github: "YOUR_GITHUB_LINK",
-    live: "YOUR_DEPLOYMENT_LINK",
+    github: "https://github.com/khushnoodahmad890-cloud/spotify-clone-react",
+    live: "https://spotify-clone-react-eight.vercel.app/",
   },
 
   {
@@ -39,8 +39,8 @@ const projects = [
       "Responsive UI",
       "Routing",
     ],
-    github: "YOUR_GITHUB_LINK",
-    live: "YOUR_DEPLOYMENT_LINK",
+    github: "https://github.com/khushnoodahmad890-cloud/AIR-BNB-CLONE",
+    live: "https://air-bnb-clone-vert-nu.vercel.app/",
   },
 
   {
@@ -60,8 +60,8 @@ const projects = [
       "Product Management",
       "REST API",
     ],
-    github: "YOUR_GITHUB_LINK",
-    live: "YOUR_DEPLOYMENT_LINK",
+    github: "https://github.com/khushnoodahmad890-cloud/ShopHub",
+    live: "https://shop-hub-sand-six.vercel.app/",
   },
 
   {
@@ -81,8 +81,8 @@ const projects = [
       "Interactive Navigation",
       "Menu Showcase",
     ],
-    github: "YOUR_GITHUB_LINK",
-    live: "YOUR_DEPLOYMENT_LINK",
+    github: "https://github.com/khushnoodahmad890-cloud/RESTAURANT-WEBSITE",
+    live: "https://restaurant-website-react-one.vercel.app/",
   },
 ];
 export default function Projects() {
