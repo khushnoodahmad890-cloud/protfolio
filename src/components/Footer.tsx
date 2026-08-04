@@ -1,8 +1,16 @@
 export default function Footer() {
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("khushnoodahmad890@gmail.com");
+      alert("✅ Email copied to clipboard!");
+    } catch {
+      alert("❌ Failed to copy email.");
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
-
         <div className="footer-brand">
           <h3>
             Khushnood<span>.dev</span>
@@ -23,13 +31,12 @@ export default function Footer() {
         </div>
 
         <div className="footer-social">
-          <a
-            href="mailto:khushnoodahmad890@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={copyEmail}
+            className="footer-copy-btn"
           >
-            📧 Email
-          </a>
+            📧 Copy Email
+          </button>
 
           <a
             href="https://github.com/khushnoodahmad890-cloud"
@@ -40,14 +47,13 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/mkhushnoodahmad/"
             target="_blank"
             rel="noopener noreferrer"
           >
             🔗 LinkedIn
           </a>
         </div>
-
       </div>
 
       <div className="footer-bottom">
