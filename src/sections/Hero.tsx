@@ -30,14 +30,7 @@ export default function Hero() {
             Let's Work Together
           </a>
 
-          <a
-            href="/resume.pdf"
-            className="secondary-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download Resume
-          </a>
+       
         </div>
 
         <div className="hero-stats">
