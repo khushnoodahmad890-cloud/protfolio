@@ -1,10 +1,15 @@
+import { useState } from "react";
+
 export default function Footer() {
+  const [copied, setCopied] = useState(false);
+
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText("khushnoodahmad890@gmail.com");
-      alert("✅ Email copied to clipboard!");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     } catch {
-      alert("❌ Failed to copy email.");
+      setCopied(false);
     }
   };
 
@@ -35,7 +40,7 @@ export default function Footer() {
             onClick={copyEmail}
             className="footer-copy-btn"
           >
-            📧 Copy Email
+            {copied ? "✅ Copied!" : "📧 Copy Email"}
           </button>
 
           <a
@@ -57,7 +62,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Khushnood Ashfaq. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Khushnood Ahmad. All rights reserved.</p>
       </div>
     </footer>
   );

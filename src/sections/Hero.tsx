@@ -30,7 +30,9 @@ export default function Hero() {
             Let's Work Together
           </a>
 
-       
+          <a href="/resume.pdf" download className="secondary-btn">
+            📄 Download Resume
+          </a>
         </div>
 
         <div className="hero-stats">

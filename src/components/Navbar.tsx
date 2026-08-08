@@ -26,6 +26,14 @@ export default function Navbar() {
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
 
           <a
+            href="/resume.pdf"
+            download
+            onClick={() => setOpen(false)}
+          >
+            Resume
+          </a>
+
+          <a
             href="#contact"
             className="nav-button"
             onClick={() => setOpen(false)}

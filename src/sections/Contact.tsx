@@ -63,9 +63,7 @@ setTimeout(() => {
         message: "",
       });
     } catch (error: any) {
-  console.log(error);
-  console.log(error.status);
-  console.log(error.text);
+  console.error("EmailJS send failed:", error?.text || error);
 
   setStatus(error.text || "Failed to send message.");
 }

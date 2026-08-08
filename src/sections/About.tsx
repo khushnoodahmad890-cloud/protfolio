@@ -13,7 +13,7 @@ export default function About() {
       <div className="about-container">
         <div className="about-text">
           <p>
-            Hi, I'm <strong>Khushnood Ashfaq</strong>, a Full Stack Developer
+            Hi, I'm <strong>Khushnood Ahmad</strong>, a Full Stack Developer
             passionate about building fast, responsive, and scalable web
             applications that solve real-world problems.
           </p>
