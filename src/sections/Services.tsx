@@ -1,67 +1,70 @@
+import { BarChart3, Code2, Globe, ShoppingCart, Wrench } from "lucide-react";
+
 const services = [
   {
-    icon: "🌐",
-    title: "Business Websites",
-    description:
-      "Professional, responsive websites designed to help businesses establish a strong online presence and attract more customers.",
+    number: "01",
+    icon: Globe,
+    title: "Business websites",
+    description: "Responsive, professional websites that make your business easy to trust and easy to reach.",
   },
-
   {
-    icon: "⚡",
-    title: "Full Stack Web Applications",
-    description:
-      "Custom web applications built with React, Node.js, Express, and PostgreSQL to solve real business problems.",
+    number: "02",
+    icon: Code2,
+    title: "Full-stack applications",
+    description: "Custom web applications built around your workflow, users, and goals.",
   },
-
   {
-    icon: "🛒",
-    title: "E-Commerce Solutions",
-    description:
-      "Modern online stores with secure authentication, shopping carts, product management, and responsive design.",
+    number: "03",
+    icon: ShoppingCart,
+    title: "E-commerce solutions",
+    description: "Useful online stores with product catalogs, carts, accounts, and order flows.",
   },
-
   {
-    icon: "📊",
-    title: "Data Analytics & Dashboards",
-    description:
-      "Interactive dashboards and data visualizations that turn business data into actionable insights.",
+    number: "04",
+    icon: BarChart3,
+    title: "Dashboards & analytics",
+    description: "Clear, interactive data views that help teams understand what is happening.",
   },
-
   {
-    icon: "🔧",
-    title: "Website Maintenance",
-    description:
-      "Ongoing support, bug fixes, performance improvements, and feature updates to keep your website running smoothly.",
+    number: "05",
+    icon: Wrench,
+    title: "Ongoing improvements",
+    description: "Maintenance, bug fixes, performance improvements, and thoughtful new features.",
   },
 ];
 
 export default function Services() {
   return (
-    <section className="section services" id="services">
-      <div className="section-header">
-        <p className="section-tag">Services</p>
-
-        <h2>
-          How I Can Help
-          <span> Your Business</span>
-        </h2>
-
-        <p className="section-description">
-          I build modern digital solutions that help businesses grow, improve
-          efficiency, and create better experiences for their customers.
-        </p>
-      </div>
-
-      <div className="cards">
-        {services.map((service) => (
-          <div className="card service-card" key={service.title}>
-            <div className="service-icon">{service.icon}</div>
-
-            <h3>{service.title}</h3>
-
-            <p>{service.description}</p>
+    <section className="section section-muted" id="services" aria-labelledby="services-title">
+      <div className="container">
+        <div className="section-heading">
+          <div className="section-heading-main">
+            <p className="section-kicker"><span>05</span> How I can help</p>
+            <h2 className="section-title" id="services-title">
+              Good ideas deserve<br /><span>good execution.</span>
+            </h2>
           </div>
-        ))}
+          <p className="section-intro">
+            Whether you&apos;re starting from scratch or improving an existing
+            product, I can help turn the next step into a working solution.
+          </p>
+        </div>
+
+        <div className="service-grid">
+          {services.map(({ number, icon: Icon, title, description }) => (
+            <article className="service-card" key={title}>
+              <div className="service-card-top">
+                <span className="service-icon"><Icon size={21} strokeWidth={1.8} aria-hidden="true" /></span>
+                <span className="service-number">{number}</span>
+              </div>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <a className="service-link" href="#contact" aria-label={`Discuss ${title.toLowerCase()}`}>
+                Discuss a project <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

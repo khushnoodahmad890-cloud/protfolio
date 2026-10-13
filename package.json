@@ -1,8 +1,8 @@
 {
-  "name": "react-typescript",
+  "name": "khushnood-portfolio",
   "version": "1.0.0",
   "type": "module",
-  "description": "React and TypeScript example starter project",
+  "description": "Responsive portfolio of Khushnood Ahmad, a full-stack developer.",
   "keywords": [
     "typescript",
     "react",
